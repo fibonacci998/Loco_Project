@@ -142,5 +142,5 @@ $(document).ready(function(){
 //add animation  /initialize woo
 $(document).ready(function(){
 	'use strict'
-  new WOW().init();
+  	new WOW().init();
 });
