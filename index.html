@@ -10,16 +10,51 @@
 	<!--Google font-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500i,600,600i,700,700i,800,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600i,700,900,900i" rel="stylesheet">
- 	<!--favicon-->
- 	<link rel="icon" type="image/png" href="images/favicon.png">
+	<!--favicon-->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<!--font awesome-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<!--animate css-->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!--bx slider css-->
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 </head>
 <body>
 	<!-- header -->
-	<header class="header">
-		<div class="header-overlay">
+	<header class="header" id="HOME">
+		<!-- navigation-->
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#loso-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<!--small size logo-->
+						<img src="images/logo-small.png" alt="logo">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="loso-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#HOME" class="nav-item">HOME</a></li>
+						<li><a href="#ABOUT" class="nav-item">ABOUT</a></li>
+						<li><a href="#FEATURES" class="nav-item">FEATURES</a></li>
+						<li><a href="#SCREENS" class="nav-item">SCREEN</a></li>
+						<li><a href="#DOWNLOAD" class="nav-item">DOWNLOAD</a></li>
+						<li><a href="#CONTACT" class="nav-item">CONTACT</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="header-overlay" >
+			<div class="container header-container">
 				<div class="row">
 					<div class="col-md-12">
 						<!--logo-->
@@ -41,8 +76,8 @@
 						</div>
 						<div class="header-btns">
 							<!--header buttons-->
-							<a class="btn btn-download" href="#">Download</a>
-							<a class="btn btn-tour" href="#">Take a tour
+							<a class="btn btn-download wow fadeInLeft" href="#">Download</a>
+							<a class="btn btn-tour wow fadeInRight" href="#">Take a tour
 								<i class="fa fa-angle-down"></i>
 							</a>
 							
@@ -59,7 +94,7 @@
 		</div>
 	</header>
 	<!--About us-->
-	<section>
+	<section id="ABOUT">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -76,11 +111,11 @@
 				<div class="row">
 					<div class="col-md-6">
 						<!--about iphone-->
-						<div class="about-iphone">
+						<div class="about-iphone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
 							<img src="images/about-iphone.png" alt="iphone">
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
 						<!--why choose title-->
 						<div class="choose-us-title">
 							<h2>
@@ -93,7 +128,7 @@
 						<!--why choose us description-->
 						<div class="choose-us-des">
 							<!--choose us item 1-->
-							<div class="choose-us-item">
+							<div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1s">
 								<!--choose us item icon-->
 								<div>
 									<i class="fa fa-bolt">
@@ -105,7 +140,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, expedita? </p>
 							</div>
 							<!--choose us item 2-->
-							<div class="choose-us-item">
+							<div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1.5s">
 								<!--choose us item icon-->
 								<div>
 									<i class="fa fa-bullhorn">
@@ -117,7 +152,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, expedita?</p>
 							</div>
 							<!--choose us item 3-->
-							<div class="choose-us-item">
+							<div class="choose-us-item wow fadeInUp" data-wow-duration=".5s" data-wow-delay="1.5s">
 								<!--choose us item icon-->
 								<div>
 									<i class="fa fa-flag-o">
@@ -139,7 +174,7 @@
 		<div class="testimonial-overlay">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 wow bounceInDown">
 						<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
 							<!---indicators -->
 							<ol class="carousel-indicators">
@@ -199,11 +234,11 @@
 		</div>
 	</section>
 	<!--feature-->
-	<section class="feature">
+	<section class="feature" id="FEATURES">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="section-title">
+					<div class="section-title wow fadeIn" data-wow-duration="1s">
 						<h2>
 							Features
 						</h2>
@@ -215,7 +250,7 @@
 		<div class="feature-inner-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="1s">
 						<!--left feature item 01-->
 						<div class="left-feature-item">
 							<!--icon-->
@@ -249,10 +284,10 @@
 					</div>
 					<div class="col-md-4">
 						<div class="feature-iphone">
-							<img src="images/iphone-02.png" alt="feature iphone">
+							<img class="wow bounceIn" data-wow-duration="1s" src="images/iphone-02.png" alt="feature iphone">
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="1s">
 						<!--right feature item 01-->
 						<div class="right-feature-item">
 							<!--icon-->
@@ -292,7 +327,7 @@
 	<!--purchase now-->
 	<section class="purchase-now">
 		<div class="container">
-			<div class="row">
+			<div class="row wow fadeInLeftBig" data-wow-duration="1s">
 				<div class="col-md-9">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia necessitatibus accusamus consectetur labore molestiae architecto neque aperiam esse perspiciatis numquam.
@@ -306,7 +341,7 @@
 	</section>
 
 	<!--Screens-->
-	<section class="screens">
+	<section class="screens" id="SCREENS">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -320,20 +355,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="screen-slider">
-			<div class="carousel">
-				<div class="item">
-					<img src="images/screen-01.png" width="60" height="60" alt="screen">
+		<div class="screen-slider wow bounceInRight" data-wow-duration="1s">
+			<div class="container">
+				<div class="row">
+					<div class="bxslider">
+						<div class="item">
+							<img src="images/screen-01.png" alt="screen">
+						</div>
+						<div class="item">
+							<img src="images/screen-02.png" alt="screen">
+						</div>
+						<div class="item">
+							<img src="images/screen-03.png" alt="screen">
+						</div>
+						<div class="item">
+							<img src="images/screen-04.png" alt="screen">
+						</div>
+					</div>
+					
 				</div>
-				<div class="item">
-					<img src="images/screen-02.png" width="60" height="60" alt="screen">
-				</div>
-				<div class="item">
-					<img src="images/screen-03.png" width="60" height="60" alt="screen">
-				</div>
-				<div class="item">
-					<img src="images/screen-04.png" width="60" height="60" alt="screen">
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -341,7 +382,7 @@
 	<!--counters-->
 	<section class="counter">
 		<div class="counter-overlay">
-			<div class="container">
+			<div class="container wow bounceInLeft" data-wow-duration="1s">
 				<div class="row text-center">
 					<div class="col-md-3">
 						<div class="counter-item">
@@ -401,7 +442,7 @@
 	</section>
 
 	<!--download now-->
-	<section class="download-now">
+	<section class="download-now" id="DOWNLOAD">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -414,7 +455,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-duration="1s">
 					<img src="images/download-screen.png" alt="download screen">
 				</div>
 			</div>
@@ -422,11 +463,11 @@
 	</section>
 	<!--available on-->
 	<section class="available-on">
-		<div class="container">
+		<div class="container wow bounceInRight" data-wow-duration="1s">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="available-title">
-						<h2>Available Now</h2>
+						<h2>Available On</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 				</div>
@@ -468,8 +509,8 @@
 		</div>
 	</section>
 	<!--contact us-->
-	<section class="contact-us">
-		<div class="container">
+	<section class="contact-us" id="CONTACT">
+		<div class="container wow bounceIn">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="section-title">
@@ -479,7 +520,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact-us-form">
+		<div class="contact-us-form wow bounceIn">
 			<div class="container">
 				<form role="form">
 					<div class="row">
@@ -498,7 +539,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 wow bounceInLeft">
 					<div class="social-icons">
 						<ul>
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -521,7 +562,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="scroll-top">
-						<a href="#"><i class="fa fa-angle-up"></i></a>
+						<a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 					</div>
 				</div>
 			</div>
@@ -530,5 +571,14 @@
 	<!-- bootstrap javascipt-->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!--bx slider js-->
+	<script src="js/jquery.bxslider.js"></script>
+	<!--js counter-->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<!--js animate-->
+	<script src="js/wow.min.js"></script>
+	<!--custom js-->
+	<script src="js/custom.js"></script>
 </body>
 </html>
